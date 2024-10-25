@@ -1,0 +1,41 @@
+/* Container for the weather information */
+.weather-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #f0f8ff; /* Light blue background */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+/* Style for the weather image */
+.weather-image {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+/* Style for the temperature */
+.temperature {
+    font-size: 2em;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Style for the weather description */
+.weather-description {
+    font-size: 1.2em;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* Style for additional weather details */
+.weather-details {
+    font-size: 1em;
+    color: #555;
+}

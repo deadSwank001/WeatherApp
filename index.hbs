@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Search</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="search-container">
+        <form id="search-form">
+            <input type="text" id="city-input" name="city" placeholder="Enter city name" required>
+            <button type="submit">Search</button>
+        </form>
+    </div>
+    <div id="map" class="map-container"></div>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
+    <script>
+        function initMap() {
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 8,
+                center: {lat: -34.397, lng: 150.644}
+            });
+        }
+
+        document.getElementById('search-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            var city = document.getElementById('city-input').value;
+            // Add your search functionality here
+        });
+    </script>
+</body>
+</html>

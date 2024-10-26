@@ -24,7 +24,7 @@ if (isset($_POST['city'])) {
     $stmt->close();
 
     // Fetch weather data from the public API
-    $apiKey = 'f8ecf09044183e53100920fbb9f58d76'; // Replace with your API key
+    $apiKey = ''; // Replace with your API key
     $apiUrl = "http://api.openweatwhermap.org/data/2.5/weather?q={$city}&appid={$apiKey}&units=metric";
 
     $response = file_get_contents($apiUrl);
